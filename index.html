@@ -81,34 +81,7 @@
             ]
         });
         
-        // Make a new layer switch for the map named `main`. Each layer gets
-        // a name and an object of settings. The layers are bound by name to
-        // the href hash of an element with a `data-control='layer'`, ex:
-        // <a data-control="layer" href="#building">Building Permits, 2011</a>
-        main.layers({
-            building: {                     // The name of the layer
-                // If api is specified, this map layer will be displayed
-                // on top of the base map specified when the map was initialized
-                api: 'http://a.tiles.mapbox.com/v3/mapbox.dc-building.jsonp',
-                center: {                   // Optionally reposition the map.
-                    lat: 38.910606275724,   // New center point and zoom level
-                    lon: -77.00126406355,   // for the map. Specific either
-                    zoom: 14,               // lat and lon, zoom, or both.
-                    ease: 500               // Optional time to animimate moving
-                }                           // the map in milliseconds.
-            },
-            construction: { 
-                api: 'http://a.tiles.mapbox.com/v3/mapbox.dc-construction.jsonp',
-                center: { zoom: 12, ease: 1000 }
-            },
-            crime: { 
-                api: 'http://a.tiles.mapbox.com/v3/mapbox.dc-crime.jsonp',
-                center: { zoom: 13, ease: 1000 }
-             },
-            robbery: { api: 'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-robbery.jsonp' },
-            theft: { api: 'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-theft.jsonp' },
-            auto: { api: 'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-auto.jsonp' }
-         });
+        
                  
     </script>
 </body>
